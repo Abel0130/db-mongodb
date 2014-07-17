@@ -1,0 +1,31 @@
+first day:
+
+1.install a mongodb
+
+download mongodb from website,then unzip it to a location where you want,
+
+2.start service
+
+open "cmd" line,then input cmd : cd ***/bin change to your mongodb location which you set before,
+
+EO next cmd:mongod.exe --dbpath=**/db(where you want to put you db data) you can start the server.
+
+If you don't you will get a message "由于你的计算机积极拒绝,无法连接 127.0.0.1:27017",
+
+but if you get this message,this tip may don't do well,good luck!
+
+3.check the connection
+
+mongo.exe will do help
+
+4.create db
+
+use db
+
+cmd:use [newDBname] (this won't create a db immediately just change the db to [newDBname],but after you insert data),here I use Eclipse as example
+
+insert data
+
+cmd:db.user.insert({"name":"abel","password":"abel","sex":"male"})
+
+db will do three operations:create a db named eclipse,create a collection named user,insert a record to collection user
